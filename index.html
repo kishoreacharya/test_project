@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+    background-color: red;
+} 
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+    background-color: blue;
+}
+
+.header-large-device{
+        position: fixed;
+    width: 100%;
+    background-color: #fff;
+    height:50px;
+    padding: 0 15px;
+   border: 3px solid #73AD21;
+}
+
+.post-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+</style>
+</head>
+<body>
+
+<h2>position: absolute;</h2>
+
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+<div class="relative">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;</div>
+</div>
+
+<!--<div style="background: url(http://localhost/test_pro/test_header.png) 
+                      no-repeat center center; -webkit-background-size: cover;
+                      -moz-background-size: cover;
+                      -o-background-size: cover;
+                      background-size: cover;
+                      height:520px;
+                      width:1280px;
+                      border-color:red;
+                      ">
+                       
+                      
+</div>-->
+
+<div class="post-cover" style="background: url(http://localhost/test_pro/test_header.png) center no-repeat; background-size: cover;">
+</div>
+
+<div class="header-large-device">
+
+                QWEEQWEQWE
+
+            </div>
+<!--div {
+    width: 100%;
+    height: 400px;
+    background-image: url('img_flowers.jpg');
+    background-size: cover;
+    border: 1px solid red;
+}
+-->
+
+
+</body>
+</html>
